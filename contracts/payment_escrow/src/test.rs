@@ -280,8 +280,6 @@ fn test_release_already_released_fails() {
     client.release(&admin, &String::from_str(&env, "esc-001"));
     // EscrowNotPending = 6
     client.release(&admin, &String::from_str(&env, "esc-001"));
-<<<<<<< HEAD
-=======
 }
 
 // ── Dispute flow ──────────────────────────────────────────────────────────────
@@ -554,6 +552,7 @@ fn test_claim_when_auto_claim_disabled_fails() {
 
     // AutoClaimDisabled = 10
     client.claim(&beneficiary, &String::from_str(&env, "esc-001"));
+<<<<<<< HEAD
 }
 
 // ── Indexes ───────────────────────────────────────────────────────────────────
@@ -623,4 +622,6 @@ fn test_set_dispute_window_applies_to_new_escrows() {
     // New escrow picks up the updated window
     assert_eq!(escrow.dispute_window, 172_800u64);
 >>>>>>> b38b5bf (First commit: update payment escrow test file)
+=======
+>>>>>>> 0158e86 (Auto-Claim Tests)
 }
